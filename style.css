@@ -1,0 +1,197 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:linear-gradient(
+        135deg,
+        #0f172a,
+        #1e293b,
+        #334155
+    );
+}
+
+.container{
+    width:430px;
+    padding:25px;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.1);
+
+    border-radius:25px;
+
+    box-shadow:
+        0 10px 40px rgba(0,0,0,.5);
+
+    text-align:center;
+}
+
+h1{
+    color:white;
+    margin-bottom:20px;
+}
+
+.switcher{
+    display:flex;
+    gap:10px;
+    margin-bottom:20px;
+}
+
+.switcher button{
+    flex:1;
+    padding:12px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    color:white;
+    font-weight:600;
+}
+
+.active{
+    background:linear-gradient(
+        135deg,
+        #06b6d4,
+        #0891b2
+    );
+}
+
+.switcher button:not(.active){
+    background:#475569;
+}
+
+.calculator{
+    display:none;
+}
+
+.activeCalc{
+    display:block;
+}
+
+input{
+    width:100%;
+    height:70px;
+
+    border:none;
+    outline:none;
+
+    border-radius:15px;
+
+    margin-bottom:18px;
+
+    padding:15px;
+
+    font-size:28px;
+
+    text-align:right;
+
+    background:#e2e8f0;
+}
+
+.buttons{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:10px;
+}
+
+button{
+    border:none;
+    cursor:pointer;
+
+    padding:18px;
+
+    border-radius:12px;
+
+    font-size:18px;
+
+    transition:.25s;
+}
+
+button:hover{
+    transform:translateY(-3px);
+}
+
+button:active{
+    transform:scale(.96);
+}
+
+/* Numbers */
+
+.number-btn{
+    background:white;
+    color:#1e293b;
+    font-weight:600;
+}
+
+/* Operators */
+
+.operator-btn{
+    color:white;
+
+    background:linear-gradient(
+        135deg,
+        #f59e0b,
+        #d97706
+    );
+}
+
+/* Scientific */
+
+.science-btn{
+    color:white;
+
+    background:linear-gradient(
+        135deg,
+        #8b5cf6,
+        #6d28d9
+    );
+}
+
+/* Clear Delete */
+
+.action-btn{
+    color:white;
+
+    background:linear-gradient(
+        135deg,
+        #ef4444,
+        #b91c1c
+    );
+}
+
+/* Equal */
+
+.wide-btn{
+    grid-column: span 2;
+}
+
+.equal-btn1{
+    color:white;
+
+    background:linear-gradient(
+        135deg,
+        #22c55e,
+        #15803d
+    );
+   grid-column:span 2;
+}
+
+.equal-btn2{
+    color:white;
+
+    background:linear-gradient(
+        135deg,
+        #22c55e,
+        #15803d
+    );
+}
